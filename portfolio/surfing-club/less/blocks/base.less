@@ -1,0 +1,121 @@
+body {
+  background-image: url("../img/bg/bg-lines.png");
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: initial;
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (min-width: 1254px) {
+    width: 1224px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.read-more-link,
+a.read-more-link {
+  color: #333333;
+  text-decoration: none;
+  font-family: "League-Spartan", sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 5.4px;
+  position: relative;
+  padding-bottom: 10px;
+  display: inline-block;
+
+  &:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    background-color: #5da8ef;
+    opacity: 0.7;
+  }
+}
+
+.desc-text {
+  opacity: 0.65;
+  color: #616161;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+}
+
+.title {
+  color: #333333;
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.42px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  display: block;
+  color: #5da8ef;
+  font-family: "League-Spartan", sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 5.4px;
+  text-align: center;
+}
+
+.vertical-text {
+  color: #fff;
+  opacity: 1;
+  font-family: "League-Spartan", sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 5.4px;
+  transform: rotate(-90deg) translate(-100%, 0);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: left top;
+
+  @media (min-width: 1254px) {
+    color: #0b0c11;
+    opacity: 0.2;
+  }
+}
