@@ -132,13 +132,20 @@ a {
 }
 
 .about-me {
-  position: relative;
+  display: flex;
+}
+
+@media (max-width: 667px) {
+  .about-me {
+    flex-direction: column;
+  }
 }
 
 .about-me__image {
   width: 150px;
   background: #7a7a7a9c;
   padding: 0 100px 0 5px;
+  flex-shrink: 0.1;
 }
 
 @media (min-width: 575px) {
@@ -148,34 +155,16 @@ a {
 }
 
 .about-me-info {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  padding-right: 20px
+  margin-right: 20px;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 667px) {
   .about-me-info {
-    position: absolute;
-    top: -20px;
-    left: 175px;
+    margin-left: -80px;
   }
 }
 
-@media (min-width: 575px) {
-  .about-me-info {
-    left: 250px;
-  }
-}
+@media (min-width: 575px) {}
 
 .about-me-info__name {
   color: #ffffff;
