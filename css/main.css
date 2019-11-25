@@ -25,81 +25,6 @@ a {
   padding: 0 15px;
 }
 
-@media (min-width: 575px) {
-  .center {
-    padding: 0 -webkit-calc(50% - 270px);
-    padding: 0 calc(50% - 270px);
-  }
-}
-
-@media (min-width: 767px) {
-  .center {
-    padding: 0 -webkit-calc(50% - 360px);
-    padding: 0 calc(50% - 360px);
-  }
-}
-
-@media (min-width: 991px) {
-  .center {
-    padding: 0 -webkit-calc(50% - 480px);
-    padding: 0 calc(50% - 480px);
-  }
-}
-
-@media (min-width: 1199px) {
-  .center {
-    padding: 0 -webkit-calc(50% - 590px);
-    padding: 0 calc(50% - 590px);
-  }
-}
-
-.just-link {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.just-link::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: yellow;
-  height: 2px;
-}
-
-.just-link:hover {
-  color: yellow;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.just-link:hover::after {
-  width: 100%;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.just-link:active {
-  color: red;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.just-link:active::after {
-  width: 100%;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-  background: red;
-}
-
 .header-menu {
   list-style: none;
   display: -webkit-box;
@@ -118,27 +43,54 @@ a {
   font-size: 1rem;
   position: relative;
   padding: 10px 6px;
+  text-decoration: none;
+  color: #ffffff;
 }
 
-@media (min-width: 410px) {
-  .header-menu__item {
-    padding: 10px 10px;
-    margin-right: 40px;
-  }
+.header-menu__item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: yellow;
+  height: 2px;
+}
 
-  .header-menu__item:last-child {
-    margin-right: 0;
-  }
+.header-menu__item:hover {
+  color: yellow;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.header-menu__item:hover::after {
+  width: 100%;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.header-menu__item:active {
+  color: red;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.header-menu__item:active::after {
+  width: 100%;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  background: red;
 }
 
 .about-me {
   display: flex;
-}
-
-@media (max-width: 667px) {
-  .about-me {
-    flex-direction: column;
-  }
 }
 
 .about-me__image {
@@ -148,23 +100,9 @@ a {
   flex-shrink: 0.1;
 }
 
-@media (min-width: 575px) {
-  .about-me__image {
-    width: 200px;
-  }
-}
-
 .about-me-info {
-  margin-right: 20px;
+  margin-left: -80px;
 }
-
-@media (min-width: 667px) {
-  .about-me-info {
-    margin-left: -80px;
-  }
-}
-
-@media (min-width: 575px) {}
 
 .about-me-info__name {
   color: #ffffff;
@@ -200,18 +138,11 @@ a {
   width: 100%;
   max-width: 500px;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.9);
+  transition: all 0.2s ease;
 }
 
 .portfolio__image:hover {
   box-shadow: 10px 10px 5px rgba(0, 4, 255, 0.9);
-}
-
-@media (min-width: 991px) {
-  .portfolio-info {
-    position: absolute;
-    top: 50px;
-    left: 600px;
-  }
 }
 
 .portfolio-info__title {
@@ -319,4 +250,67 @@ a {
 
 .contact-social__item:active {
   background: #ff8888c2;
+}
+
+@media (min-width: 410px) {
+  .header-menu__item {
+    padding: 10px 10px;
+    margin-right: 40px;
+  }
+
+  .header-menu__item:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 575px) {
+  .center {
+    padding: 0 -webkit-calc(50% - 270px);
+    padding: 0 calc(50% - 270px);
+  }
+
+  .about-me__image {
+    width: 200px;
+  }
+
+  .about-me-info {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 667px) {
+  .about-me {
+    flex-direction: column;
+  }
+
+  .about-me-info {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 767px) {
+  .center {
+    padding: 0 -webkit-calc(50% - 360px);
+    padding: 0 calc(50% - 360px);
+  }
+}
+
+@media (min-width: 991px) {
+  .center {
+    padding: 0 -webkit-calc(50% - 480px);
+    padding: 0 calc(50% - 480px);
+  }
+
+  .portfolio-info {
+    position: absolute;
+    top: 50px;
+    left: 600px;
+  }
+}
+
+@media (min-width: 1199px) {
+  .center {
+    padding: 0 -webkit-calc(50% - 590px);
+    padding: 0 calc(50% - 590px);
+  }
 }
