@@ -1,0 +1,244 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+div,
+p,
+input,
+button,
+form,
+span,
+a,
+ul,
+li {
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+.header {
+    background: rgba(78, 192, 254, 1);
+    background: -moz-linear-gradient(-45deg, rgba(78, 192, 254, 1) 0%, rgba(55, 144, 217, 1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(78, 192, 254, 1)), color-stop(100%, rgba(55, 144, 217, 1)));
+    background: -webkit-linear-gradient(-45deg, rgba(78, 192, 254, 1) 0%, rgba(55, 144, 217, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(78, 192, 254, 1) 0%, rgba(55, 144, 217, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(78, 192, 254, 1) 0%, rgba(55, 144, 217, 1) 100%);
+    background: linear-gradient(135deg, rgba(78, 192, 254, 1) 0%, rgba(55, 144, 217, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4ec0fe', endColorstr='#3790d9', GradientType=1);
+    padding-top: 62px;
+    color: #fff;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-desc {
+    margin-top: 90px;
+}
+
+.header-desc__title {
+    font-size: 37px;
+    line-height: 1.324;
+    width: 538px;
+}
+
+.header-desc__title span {
+    font-size: 59px;
+}
+
+.header-desc__text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    width: 415px;
+    line-height: 1.688;
+    margin-bottom: 35px;
+}
+
+.btn {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: 900;
+    background-color: #ffd429;
+    width: 220px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all 0.2s ease;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif
+}
+
+.btn:hover {
+    background-color: #d6b222;
+}
+
+.header__desktop {
+    margin-top: -40px;
+}
+
+.future {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+
+.future__title {
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.future-items {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.future-item {
+    width: 330px;
+    background: url('../img/round-arrow.png') no-repeat center top;
+    padding-top: 70px;
+}
+
+.future-item__text {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+.trip {
+    background: url('../img/palme.png') no-repeat center top;
+}
+
+.lux {
+    background: url('../img/rocket.png') no-repeat center top;
+}
+
+.contact {
+    background-color: #ecf3f8;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contact-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.input {
+    width: 340px;
+    padding: 15px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #bbbbbb;
+    border-radius: 3px;
+}
+
+.btn-form {
+    border: 0;
+    width: 340px;
+    padding: 15px 0;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer {
+    background-color: #164d7a;
+    padding: 60px 0;
+}
+
+.footer__text {
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* 992px - 1200px */
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .header-desc__title {
+        width: 100%;
+    }
+
+    .header-desc__text {
+        width: 100%;
+    }
+
+    .header__desktop {
+        margin: 40px auto 0;
+        width: 70%;
+    }
+}
+
+/* 768px - 992px */
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+
+    .future-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .future-item {
+        margin-bottom: 30px;
+    }
+}
+
+/* 576px - 768px */
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+}
+
+/* 320px - 576px */
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .future-item {
+        width: 100%;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

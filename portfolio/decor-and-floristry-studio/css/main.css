@@ -1,0 +1,996 @@
+body {
+  background-image: url("../img/bg/bg-joanna-kosinska.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+body::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+}
+
+a {
+  color: #4c5a6f;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.header-navigation {
+  width: 200px;
+  background-color: rgb(241, 241, 241);
+  padding-top: 30px;
+  padding-left: 50px;
+  z-index: 2;
+}
+
+.header__logo {
+  width: 50px;
+  margin-bottom: 80px;
+}
+
+.header-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-menu a {
+  margin-bottom: 20px;
+}
+
+.header-menu a:hover {
+  text-decoration: none;
+  color: #768eb1;
+}
+
+.menu-toggle {
+  display: none;
+
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header-info--background {
+  background-image: url("../img/bg/bg-joanna-kosinska.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header-info__image-top {
+  width: 230px;
+  position: absolute;
+  left: -196px;
+  top: 220px;
+  z-index: 1;
+  transform: scale(-1, -1);
+}
+
+.header-info__image-bottom {
+  width: 230px;
+  position: absolute;
+  right: -153px;
+  bottom: 240px;
+  z-index: 1;
+}
+
+.rhombus {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  z-index: -1;
+  background-image: radial-gradient(at bottom left,
+      rgba(218, 239, 245, 0.3) 30%,
+      rgba(49, 185, 223, 0.4));
+  transform: rotate(45deg);
+  box-shadow: inset 0 -5px 30px -5px rgba(49, 185, 223, 0.2);
+}
+
+.rhombus::after {
+  content: "";
+  width: 510px;
+  height: 480px;
+  position: absolute;
+  left: -10px;
+  background: rgba(49, 185, 223, 0.1);
+  box-shadow: inset 0 -5px 20px -5px rgba(49, 185, 223, 0.1);
+}
+
+.header-info::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.651);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.header-info__title {
+  font-size: 70px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.header-info__desc {
+  font-size: 35px;
+  margin-bottom: 60px;
+}
+
+.header-info__button {
+  background: rgb(255, 207, 227);
+  border: none;
+  padding: 10px;
+  width: 230px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.header-info__button:hover {
+  background: rgb(247, 122, 174);
+}
+
+.wrapp-button {
+  width: 240px;
+  border-top: 1px solid rgb(255, 207, 227);
+  padding: 5px;
+  border-bottom: 1px solid rgb(255, 207, 227);
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.wrapp-button:hover {
+  border-color: rgb(247, 122, 174);
+}
+
+.wrapp-button::before,
+.wrapp-button::after {
+  content: "";
+  position: absolute;
+  transition: all 0.2s ease;
+}
+
+.wrapp-button::before {
+  top: -3px;
+  left: -21px;
+  border-right: 23px solid rgb(255, 207, 227);
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  -webkit-clip-path: polygon(0 0, 98% 4%, 6% 50%, 96% 96%, 0 100%);
+  clip-path: polygon(0 0, 98% 4%, 6% 50%, 96% 96%, 0 100%);
+}
+
+.wrapp-button:hover::before {
+  border-right-color: rgb(247, 122, 174);
+}
+
+.wrapp-button::after {
+  top: -2px;
+  right: -20px;
+  border-left: 21px solid rgb(255, 207, 227);
+  border-top: 29px solid transparent;
+  border-bottom: 29px solid transparent;
+  -webkit-clip-path: polygon(100% 0, 1% 3%, 95% 50%, -2% 98%, 100% 100%);
+  clip-path: polygon(100% 0, 1% 3%, 95% 50%, -2% 98%, 100% 100%);
+}
+
+.wrapp-button:hover::after {
+  border-left-color: rgb(247, 122, 174);
+}
+
+.header-info__button::before,
+.header-info__button::after {
+  content: " ";
+  position: absolute;
+  top: 0px;
+}
+
+.header-info__button::before {
+  left: -15px;
+  border-right: 15px solid rgb(255, 207, 227);
+  border-top: 22px solid transparent;
+  border-bottom: 22px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.header-info__button::after {
+  right: -15px;
+  border-left: 15px solid rgb(255, 207, 227);
+  border-top: 22px solid transparent;
+  border-bottom: 22px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.header-info__button:hover::before {
+  border-right-color: rgb(247, 122, 174);
+}
+
+.header-info__button:hover::after {
+  border-left-color: rgb(247, 122, 174);
+}
+
+.services {
+  padding-top: 80px;
+}
+
+.services-interior {
+  display: flex;
+  justify-content: space-between;
+  min-height: 300px;
+  margin-bottom: 100px;
+}
+
+.services-interior-wrapper {
+  position: relative;
+  border: 2px solid;
+  border-image: linear-gradient(to right,
+      rgb(166, 214, 202),
+      rgba(0, 0, 0, 0)) 1 1;
+  width: 400px;
+  height: 200px;
+  top: 100px;
+}
+
+.services-interior__image {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 400px;
+}
+
+.services-interior-desc {
+  text-align: center;
+  width: 50%;
+}
+
+.services-interior-desc__title {
+  margin-bottom: 40px;
+}
+
+.services-interior-desc__text {
+  margin-bottom: 40px;
+}
+
+.services-interior-desc__button {
+  margin: 0 auto;
+}
+
+.services-bouquet {
+  display: flex;
+  justify-content: space-between;
+  min-height: 300px;
+}
+
+.services-bouquet-desc {
+  width: 40%;
+  text-align: center;
+}
+
+.services-bouquet-desc__title {
+  margin-bottom: 40px;
+}
+
+.services-bouquet-desc__text {
+  margin-bottom: 40px;
+}
+
+.services-bouquet-desc__button {
+  margin: 0 auto;
+}
+
+.services-bouquet-images {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.services-bouquet-wrapper {
+  border: 2px solid;
+  height: 50%;
+  position: relative;
+}
+
+.wrapper1 {
+  width: 300px;
+  border-image: linear-gradient(to right,
+      rgb(166, 214, 202),
+      rgba(0, 0, 0, 0)) 40% 2;
+}
+
+.wrapper2 {
+  width: 200px;
+  height: 270px;
+  border-image: linear-gradient(to left,
+      rgb(166, 214, 202),
+      rgba(0, 0, 0, 0)) 40% 2;
+}
+
+.item1 {
+  width: 300px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.item2 {
+  width: 200px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.about-us {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.about-us-content {
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.about-us-content::before,
+.about-us-content::after {
+  content: '';
+  position: absolute;
+  width: 151px;
+  height: 215px;
+  background: url(../img/header/title-image-annie-spratt-little.png) no-repeat;
+  background-size: 100%;
+}
+
+.about-us-content::before {
+  left: -210px;
+  top: 30px;
+  transform: rotate(-45deg);
+}
+
+.about-us-content::after {
+  right: -213px;
+  top: 30px;
+  transform: scale(1, -1) rotate(135deg);
+}
+
+.about-us-content__title {
+  margin-bottom: 40px;
+}
+
+.about-us-content__text {
+  margin-bottom: 40px;
+}
+
+.about-us-advantages {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.about-us-advantages__item {
+  padding-top: 150px;
+  background: url('../img/logo/logo-sharon-pittaway-little.png') no-repeat center;
+  background-size: 100px;
+}
+
+.about-us-advantages__item-text {
+  font-weight: 600;
+  text-align: center;
+}
+
+.about-us-image {
+  width: 100%;
+}
+
+.portfolio {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.portfolio__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-bouquets {
+  display: flex;
+  justify-content: space-around;
+  min-height: 300px;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.portfolio__desc {
+  margin-top: 30px;
+  position: relative;
+}
+
+.portfolio__desc-link {
+  color: #ffa3e0;
+  position: relative;
+  transition: 0.2s;
+  margin-left: 75px;
+}
+
+.portfolio__desc-link:hover {
+  color: #fd64ca;
+  text-decoration: none;
+}
+
+.portfolio__desc-arrow {
+  position: absolute;
+  left: 0;
+  width: 140px;
+  stroke: #ffa3e0;
+  transition: 0.2s;
+}
+
+.portfolio__desc-arrow:hover {
+  stroke: #fd64ca;
+}
+
+.portfolio-bouquets__bouquet {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.portfolio-bouquets__bouquet-item {
+  width: 200px;
+  position: absolute;
+}
+
+.bouquet1 {
+  left: 10px;
+  top: 10px;
+}
+
+.bouquet2 {
+  left: 10px;
+  top: 10px;
+}
+
+.bouquet3 {
+  left: 10px;
+  top: 10px;
+}
+
+.image-wrapper {
+  position: relative;
+  border: 2px solid;
+  width: 200px;
+  margin-right: 30px;
+}
+
+.wrapper-bouquet1 {
+  height: 100px;
+  border-image: linear-gradient(to right,
+      rgb(166, 214, 202), rgba(0, 0, 0, 0)) 40% 2;
+  top: 150px;
+}
+
+.wrapper-bouquet2 {
+  height: 270px;
+  border-image: linear-gradient(to right,
+      rgb(166, 214, 202), rgba(0, 0, 0, 0)) 40% 2;
+}
+
+.wrapper-bouquet3 {
+  height: 270px;
+  border-image: linear-gradient(to right,
+      rgb(166, 214, 202),
+      rgba(0, 0, 0, 0)) 40% 2;
+}
+
+.portfolio-interiors {
+  min-height: 300px;
+  position: relative;
+}
+
+.portfolio-interiors__interior {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-interiors__interior-item {
+  width: 300px;
+  position: absolute;
+}
+
+.image-interior-wrapper {
+  width: 300px;
+  height: 180px;
+}
+
+.wrapper-interior1 {
+  bottom: -40px;
+  border-image: linear-gradient(to left,
+      rgb(166, 214, 202),
+      rgba(0, 0, 0, 0)) 40% 2;
+}
+
+.interior1 {
+  right: 10px;
+  bottom: 10px;
+}
+
+.wrapper-interior2 {
+  border-image: linear-gradient(to right,
+      rgb(166, 214, 202),
+      rgba(0, 0, 0, 0)) 40% 2;
+}
+
+.interior2 {
+  top: 10px;
+  left: 10px;
+}
+
+.wrapper-interior3 {
+  border-image: linear-gradient(to right,
+      rgb(166, 214, 202),
+      rgba(0, 0, 0, 0)) 40% 2;
+}
+
+.interior3 {
+  left: 10px;
+  bottom: 10px;
+}
+
+.contacts {
+  padding-bottom: 40px;
+  min-height: 450px;
+}
+
+.contacts__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contacts-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contacts-content-wrapper-image {
+  border: 2px solid;
+  position: relative;
+  width: 336px;
+  height: 300px;
+  border-image: linear-gradient(to right,
+      rgb(166, 214, 202),
+      rgba(0, 0, 0, 0)) 40% 2;
+  bottom: -27px;
+}
+
+.contacts-content-wrapper-image__image {
+  width: 336px;
+  height: 336px;
+  background: url('../img/contacts/contacts-amy-shamblen.jpg') no-repeat center;
+  background-size: cover;
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+
+}
+
+.contacts-content-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contacts-content-desc-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 450px;
+}
+
+.contacts-form__input {
+  width: 200px;
+  border: 0;
+  background-color: transparent;
+  border-bottom: 1px solid rgb(166, 214, 202);
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  transition: 0.2s;
+}
+
+.contacts-form__input:focus {
+  outline: 0;
+  border-bottom-color: rgb(3, 147, 111);
+}
+
+.row-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.contacts-form__button {
+  margin: 0 auto;
+}
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 65px;
+}
+
+.footer p {
+  text-align: center;
+  position: relative;
+  width: 200px;
+  margin: 0 auto;
+
+}
+
+.footer p::before,
+.footer p::after {
+  content: '';
+  position: absolute;
+  width: 96px;
+  height: 138px;
+  background: url(../img/header/title-image-annie-spratt-little.png) no-repeat;
+  background-size: 100%;
+}
+
+.footer p::before {
+  left: 280px;
+  top: -42px;
+  transform: rotate(-45deg);
+}
+
+.footer p::after {
+  right: 282px;
+  top: -43px;
+  transform: scale(1, -1) rotate(135deg);
+}
+
+/* width 992 - 1200 */
+
+@media (max-width: 1200px) {
+
+  .about-us-content::before,
+  .about-us-content::after {
+    width: 100px;
+    height: 143px;
+  }
+
+  .about-us-content::after {
+    right: -176px;
+  }
+
+  .about-us-content::before {
+    left: -178px;
+  }
+
+  .portfolio-interiors__interior-item {
+    width: 270px;
+  }
+
+}
+
+/* width 768 - 992 */
+
+@media (max-width: 992px) {
+
+  .container {
+    width: 720px;
+  }
+
+  .services-interior__image {
+    width: 340px;
+  }
+
+  .wrapper1 {
+    display: none;
+  }
+
+  .about-us-content {
+    width: 100%;
+  }
+
+  .about-us-content::before {
+    left: 63px;
+    top: 145px;
+  }
+
+  .about-us-content::after {
+    right: 63px;
+    top: 145px;
+  }
+
+  .wrapper-bouquet2 {
+    display: none;
+  }
+
+  .wrapper-interior2 {
+    display: none;
+  }
+
+  .contacts-content-wrapper-image__image {
+    width: 80%;
+    height: 100%;
+  }
+
+  .contacts-content {
+    justify-content: space-between;
+  }
+
+  .contacts-content-wrapper-image {
+    width: 50%;
+  }
+
+  .contacts-content-desc-form {
+    width: 100%;
+  }
+
+  .row-form {
+    flex-direction: column;
+  }
+}
+
+/* width 576 - 768 */
+
+@media (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+
+  .menu-toggle {
+    display: initial;
+    position: absolute;
+    font-size: 2rem;
+    z-index: 100;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 0 5px;
+  }
+
+  .menu-toggle:hover {
+    background: rgb(224, 224, 224);
+
+  }
+
+  .header-navigation {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding: 0;
+    left: -1000px;
+    transition: 0.2s;
+  }
+
+  .active {
+    left: 0;
+  }
+
+  .header-menu a {
+    border-bottom: 1px solid rgb(190, 190, 190);
+    padding: 10px 0;
+    margin-bottom: 0;
+  }
+
+  .header-menu a:hover {
+    background: rgb(224, 224, 224);
+  }
+
+  .rhombus {
+    width: 400px;
+    height: 400px;
+  }
+
+  .rhombus::after {
+    width: 410px;
+    height: 380px;
+  }
+
+  .header-info__image-top,
+  .header-info__image-bottom {
+    width: 130px;
+  }
+
+  .header-info__image-top {
+    left: -95px;
+  }
+
+  .header-info__image-bottom {
+    right: -77px;
+  }
+
+  .header-info__title {
+    font-size: 50px;
+  }
+
+  .header-info__desc {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+
+  .services-interior {
+    flex-direction: column;
+  }
+
+  .services-interior-desc {
+    width: 100%;
+    order: -1;
+  }
+
+  .services-interior-wrapper {
+    top: 70px;
+    margin: 0 auto;
+  }
+
+  .services-bouquet {
+    flex-direction: column;
+  }
+
+  .services-bouquet-desc {
+    width: 100%;
+  }
+
+  .services-bouquet-images {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .wrapper2 {
+    top: 10px;
+  }
+
+  .portfolio__desc--position {
+    right: 150px;
+  }
+
+  .portfolio-bouquets__bouquet {
+    left: 60px;
+  }
+
+  .about-us-content::before,
+  .about-us-content::after {
+    width: 66px;
+    height: 94px;
+    top: 199px;
+  }
+
+  .about-us-content::before {
+    left: 17px;
+  }
+
+  .about-us-content::after {
+    right: 17px;
+  }
+
+  .about-us-advantages__item {
+    background-size: 75px;
+  }
+
+  .image-interior-wrapper {
+    margin: 0 auto;
+  }
+
+  .portfolio-interiors__interior {
+    flex-direction: column;
+  }
+
+  .wrapper-interior3 {
+    margin-top: 70px;
+  }
+
+  .contacts-content-wrapper-image {
+    width: 30%;
+  }
+
+  .contacts-content-wrapper-image__image {
+    width: 100%;
+  }
+
+  .footer p::before,
+  .footer p::after {
+    width: 71px;
+    height: 102px;
+  }
+
+  .footer p::before {
+    left: 194px;
+  }
+
+  .footer p::after {
+    right: 194px;
+  }
+}
+
+/* width 320 - 576 */
+
+@media (max-width: 576px) {
+  .container {
+    width: auto;
+  }
+
+  .services-interior-wrapper {
+    width: 90%;
+  }
+
+  .services-interior__image {
+    width: 100%;
+    left: 10px;
+  }
+
+  .about-us-content::before,
+  .about-us-content::after {
+    display: none;
+  }
+
+  .about-us-advantages {
+    flex-wrap: wrap;
+  }
+
+  .about-us-advantages__item {
+    width: 47%;
+  }
+
+  .portfolio-bouquets {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .portfolio-bouquets__bouquet {
+    margin-top: 10px;
+    flex-direction: column;
+    left: 0;
+  }
+
+  .wrapper-bouquet1 {
+    margin-top: 55px;
+    top: 0;
+  }
+
+  .portfolio__desc--position {
+    right: 0;
+  }
+
+  .portfolio__desc {
+    order: -1;
+  }
+
+  .contacts-content-wrapper-image {
+    display: none;
+  }
+
+  .footer p::before,
+  .footer p::after {
+    display: none;
+  }
+
+  .contacts-content-desc-form {
+    align-items: center;
+  }
+
+  .contacts-content-desc {
+    text-align: center;
+  }
+}

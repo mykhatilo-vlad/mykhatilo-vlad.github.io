@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Верстка сайта по макету</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Open+Sans&display=swap&subset=cyrillic"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <header id="header" class="header">
+    <div class="container">
+      <img src="img/logo.png" alt="Logo" class="header__logo animated bounceInDown" />
+      <div class="wrapper">
+        <div class="header-desc animated bounceInLeft">
+          <h1 class="header-desc__title">
+            С помощью верстки<br />
+            я создам ту жизнь, о которой
+            <span>мечтаю!</span>
+          </h1>
+          <p class="header-desc__text">
+            Мои стремления + настойчивость позволят мне достичь чего угодно. Я
+            не верю в это. Я знаю это на 100%. Меня не остановить!
+          </p>
+          <a href="#" class="btn">Двигаться к мечте!</a>
+        </div>
+        <img src="img/desctop.png" alt="Desctop" class="header__desktop animated bounceInRight" />
+      </div>
+    </div>
+  </header>
+
+  <section class="future">
+    <div class="container">
+      <h2 class="future__title">
+        Что меня ждет впереди
+      </h2>
+      <div class="future-items">
+        <div class="future-item free animated ">
+          <h3 class="future-item__title">Свободное время</h3>
+          <div class="future-item__text">
+            Мне нужно свободное время на семью и самое настоящее
+          </div>
+        </div>
+        <div class="future-item trip animated ">
+          <h3 class="future-item__title">Яркие путешествия</h3>
+          <div class="future-item__text">
+            Работать откуда угодно - что может быть лучше?
+          </div>
+        </div>
+        <div class="future-item lux animated ">
+          <h3 class="future-item__title">Создание ценности</h3>
+          <div class="future-item__text">
+            Нет ничего сильнее, чем жить не просто так, создавая ценность
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <h2 class="future__title">
+        Форма заказа билета в будудщее
+      </h2>
+      <form action="#" class="contact-form">
+        <input type="text" id="name" class="input name" placeholder="Имя" required>
+        <input type="email" id="email" class="input email" placeholder="E-mail" required>
+        <input type="tel" id="phone" class="input phone" placeholder="Телефон" required>
+        <input type="text" id="my-dream" class="input my-dream" placeholder="Куда я полечу в ближайшее время?" required>
+        <button class="btn btn-form">Двигаться к мечте!</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">
+        &copy; Все мои мечты защищены моим трудолюбием
+      </p>
+    </div>
+  </footer>
+  <script src="js/jquery.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
