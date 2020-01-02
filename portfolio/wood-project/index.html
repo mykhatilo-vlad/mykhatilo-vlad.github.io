@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Wood Project</title>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Philosopher:400,700|Playfair+Display:400,700|Roboto&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="libs/owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/owlcarousel/owl.theme.default.min.css">
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans|Philosopher:400,700|Playfair+Display:400,700|Roboto&display=swap&subset=cyrillic"
+		rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+	integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
+	<div class="menu-toggle"><i class="fa fa-bars"></i><i class="fa fa-times non-active"></i></div>
 	<nav class="fixed-menu">
 		<ul class="menu">
-			<li class="menu__item">
-				<a href="#materials" title="Материалы">Материалы</a>
-			</li>
-			<li class="menu__item">
-				<a href="#team" title="Наши профессионалы">Наши профессионалы</a>
-			</li>
 			<li class="menu__item">
 				<a href="#projects" title="Готовые проекты">Готовые проекты</a>
 			</li>
 			<li class="menu__item">
-				<a href="#order-project" title="Заказть Проект">Заказть Проект</a>
+				<a href="#team" title="Наши профессионалы">Наша команда</a>
+			</li>
+			<li class="menu__item">
+				<a href="#materials" title="Материалы">Материалы</a>
+			</li>
+			<li class="menu__item">
+				<a href="#feedback" title="Заказть Проект">Заказть Проект</a>
 			</li>
 		</ul>
 		<div class="fixed-menu__arrow-bottom">
-			<a href="#feedback" class="arrow-bottom" title="К форме обратной связи"></a>
+			<a href="#advantages" class="arrow-bottom" title="К форме обратной связи"></a>
 		</div>
 	</nav>
 	<div class="content-container">
 		<header class="header">
 			<div class="container">
 				<div class="header-top">
-					<img src="img/logo/logo.png" alt="Wood Project" class="header-top__logo">
+					<img src="img/logo/logo.svg" alt="Wood Project" class="header-top__logo">
 					<div class="header-top-feedback">
 						<a href="#" class="header-top__btn">Заказать звонок</a>
-						<div class="header-top__tel">+7 964 426 88 88</div>
+						<a href="#" class="header-top__tel">+7 964 426 88 88</a>
 					</div>
 				</div>
 
@@ -47,10 +56,10 @@
 						</p>
 						<h1 class="order__title">
 							Экологически чистый дом
-							залог вашего здоровья 
+							залог вашего здоровья
 						</h1>
 						<p class="order__bottom">
-							Мы строим самые  стильные дома. За 80 дней ваш дом будет готов. Гарантией качества 10 лет.
+							Мы строим самые стильные дома. За 80 дней ваш дом будет готов. Гарантией качества 10 лет.
 						</p>
 						<button class="order__btn btn">Заказать проект</button>
 					</div>
@@ -62,7 +71,7 @@
 						<a href="#">
 							<img src="img/header/gift.png" alt="Подарок" class="gift__image">
 						</a>
-						
+
 						<p class="gift__bottom">
 							Каждый 3 проект получает <span>бесплатный</span>
 							ремонт любой комнаты на выбор
@@ -71,15 +80,289 @@
 				</div>
 			</div>
 		</header>
+
+		<section id="advantages" class="advantages">
+			<div class="container">
+				<div class="advantages-wrapper">
+					<div class="advantages-block advantages-block--img-1">
+						<h3 class="advantages-block__title">
+							Чистый воздух
+						</h3>
+						<p class="advantages-block__text">
+							Дерево хорошо пропускает воздух, что обеспечивает постоянное поддержание кислородного
+							баланса
+						</p>
+					</div>
+					<div class="advantages-block advantages-block--img-2">
+						<h3 class="advantages-block__title">
+							Долговечность
+						</h3>
+						<p class="advantages-block__text">
+							Благодаря природным свойствам сооружения
+							из срубов прослужат
+							более сотни лет.
+						</p>
+					</div>
+					<div class="advantages-block advantages-block--img-3">
+						<h3 class="advantages-block__title">
+							Гармония
+						</h3>
+						<p class="advantages-block__text">
+							Важное преимущество деревянных домов
+							это способность влиять
+							на самочувствие человека.
+						</p>
+					</div>
+					<div class="advantages-block advantages-block--img-4">
+						<h3 class="advantages-block__title">
+							Душевно
+						</h3>
+						<p class="advantages-block__text">
+							Бревенчатые стены накапливают тепло
+							и равномерно распределяя согревают пространство.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="projects" class="projects">
+			<div class="container">
+				<h2 class="projects__title">Готовые проекты</h2>
+				<div class="projects-wrapper">
+					<a href="#" class="projects-item">
+						<img src="img/projects/old-jim.jpg" alt="Old Jim" class="projects-item__image">
+						<div class="projects-item-text">
+							<h3 class="projects-item__title">Old Jim</h3>
+							Смотреть проект
+						</div>
+					</a>
+					<a href="#" class="projects-item">
+						<img src="img/projects/chroner.jpg" alt="Chroner" class="projects-item__image">
+						<div class="projects-item-text">
+							<h3 class="projects-item__title">Chroner</h3>
+							Смотреть проект
+						</div>
+					</a>
+					<a href="#" class="projects-item project-bronson">
+						<img src="img/projects/bronson.jpg" alt="Bronson" class="projects-item__image">
+						<div class="projects-item-text">
+							<h3 class="projects-item__title">Bronson</h3>
+							Смотреть проект
+						</div>
+					</a>
+					<a href="#" class="projects-item project-fairy-tale">
+						<img src="img/projects/fairy-tale.jpg" alt="Fair Tale" class="projects-item__image">
+						<div class="projects-item-text">
+							<h3 class="projects-item__title">Fairy Tale</h3>
+							Смотреть проект
+						</div>
+					</a>
+					<a href="#" class="projects-item project-dorado">
+						<img src="img/projects/dorado.jpg" alt="Dorado" class="projects-item__image">
+						<div class="projects-item-text projects-item-text--dorado">
+							<h3 class="projects-item__title">Dorado</h3>
+							Смотреть проект
+						</div>
+					</a>
+				</div>
+				<button class="projects__btn btn">Показать еще</button>
+			</div>
+		</section>
+
+		<section class="about-our-team">
+			<div class="container">
+				<div id="team" class="our-team">
+					<h2 class="our-team__title">Наша Команда</h2>
+					<div class="our-team-wrapper-info">
+						<div class="team-member-card">
+							<img src="img/team/photo-team-box-left-top.jpg" alt="Member`s photo" class="card__photo">
+							<div class="card-info">
+								<h3 class="card-info__name">Иван Иванович</h3>
+								<p class="card-info__position">Основатель Ген. Директор компании "Wood Project"</p>
+								<p class="card-info__achievements">Под его руководством выполнено
+									более 200 проектов.<br>
+									Также провел 182 сделки по продаже недвижимости.<br>
+									Многолетний опыт управления строительными компаниями.
+								</p>
+							</div>
+						</div>
+						<div class="team-member-card">
+							<img src="img/team/photo-team-box-right-top.jpg" alt="Member`s photo" class="card__photo">
+							<div class="card-info">
+								<h3 class="card-info__name">Семен Анатольевич</h3>
+								<p class="card-info__position">Сооснователь компании «Wood Project»</p>
+								<p class="card-info__achievements">Более 150 проектов под его руководством.
+									На данный момент проводит работу
+									над проектами,
+									которые позволят домам
+									от компании «Wood Project» собственное энергообеспечение.
+								</p>
+							</div>
+						</div>
+						<div class="team-member-card">
+							<img src="img/team/photo-team-box-left-bottom.jpg" alt="Member`s photo" class="card__photo">
+							<div class="card-info">
+								<h3 class="card-info__name">Сергей Петрович</h3>
+								<p class="card-info__position">Архитектор компании «Wood Project»</p>
+								<p class="card-info__achievements">Более 500 успешных проектов под его руководством.
+									Спроектировал 20 жилых комплексов.<br>
+									Разработка архитектурных решений
+									а также авторский надзор за реализацией архитектурного проекта.
+								</p>
+							</div>
+						</div>
+						<div class="team-member-card">
+							<img src="img/team/photo-team-box-right-bottom.jpg" alt="Member`s photo"
+								class="card__photo">
+							<div class="card-info">
+								<h3 class="card-info__name">Андрей Петрович</h3>
+								<p class="card-info__position">Инженер компании «Wood Project»</p>
+								<p class="card-info__achievements">Разработка проектов строительных робот,
+									выполнение контроля качества построек.
+									Подбор рабочего коллектива и контроль процесса строительства.<br>
+									Профессионал с большим практическим опытом успешных объектов.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="materials" class="materials">
+					<h2 class="materials__title">Какой материал мы используем</h2>
+					<div class="materials-wrapper-items owl-carousel">
+						<div class="materials-item oak">
+							<img src="img/material/wood-round-1.png" alt="Oak" class="materials-item__image">
+							<div class="desc-wrapper">
+								<h3 class="item__title">Дуб</h3>
+								<p class="item_desc">Сруб из дуба устойчив к воздействию грызунов и насекомых, ему
+									не грозит поражение древоточцами.
+									Это дополнительный фактор, способствующий его долговечности.</p>
+							</div>
+						</div>
+						<div class="materials-item beech">
+							<img src="img/material/wood-round-2.png" alt="Beech" class="materials-item__image">
+							<div class="desc-wrapper">
+								<h3 class="item__title">Бук</h3>
+								<p class="item_desc">Древесина бука обладает нежной бежево-розовой расцветкой.
+									Ее структура не ярко выражена, отличается изысканностью
+									и универсальным характером.</p>
+							</div>
+						</div>
+						<div class="materials-item grab">
+							<img src="img/material/wood-round-3.png" alt="Grab" class="materials-item__image">
+							<div class="desc-wrapper">
+								<h3 class="item__title">Граб</h3>
+								<p class="item_desc">Граб – это красивое среднее
+									по размера лиственное дерево, родственное березе, из которого получают ценную
+									древесину,
+									называемую белым буком.</p>
+							</div>
+						</div>
+						<div class="materials-item elm">
+							<img src="img/material/wood-round-4.png" alt="Elm" class="materials-item__image">
+							<div class="desc-wrapper">
+								<h3 class="item__title">Вяз</h3>
+								<p class="item_desc">Древесина вяза практически
+									не подвержена гниению даже
+									при высоком уровне влажности. Из-за этой особенности дерево стало популярно в
+									Европе.
+								</p>
+							</div>
+						</div>
+					</div>
+					<img src="img/arrows/arrow-left.svg" class="materials__arrow-left"></img>
+					<img src="img/arrows/arrow-right.svg" class="materials__arrow-right"></img>
+				</div>
+
+				<div class="house-benefits">
+					<div class="house-benefits-wrapper">
+						<div class="benefits-block">
+							<h2 class="benefits-block__title">Почему стоит выбрать дом из сруба</h2>
+							<ol class="benefits-block-list">
+								<li>Внешний и внутренний вид всегда производит впечатление.</li>
+								<li>Такие дома похожи на крепости или сказочные замки.</li>
+								<li>Отпадает надобность в утеплении – массив сам по себе достаточен для этого. Однако
+									стоит учесть, что это будет в том случае, если диаметр бревна превышает 25 см.</li>
+								<li>Микроклимат внутри дома прекрасен для людей, имеющих какие-либо заболевания.</li>
+								<li>Натуральный сруб не требует защиты от плесени
+									и гнили.</li>
+								<li>Древесина, содержит смолу, которая и является антисептиком.</li>
+								<li>Экономия материала и цельность больших площадей,
+									за счёт длины хлыстов.</li>
+								<li>Долговечность. Сто лет для сруба совсем не срок.</li>
+							</ol>
+						</div>
+						<div class="benefits-block">
+							<h2 class="benefits-block__title">Контроль качества </h2>
+							<ol class="benefits-block-list">
+								<li>Этапы как в проектировании так и в процессе работы.</li>
+								<li>Контроль выполнения поставленных задач.</li>
+								<li>Все материалы поставляются непосредственно на место проведения строительных работ, с
+									соответствующими документами и в идеальном состоянии.</li>
+								<li>У нас работают самые опытные специалисты, каждый из них знает свое дело. Даже
+									минимальный риск будет предотвращен.</li>
+								<li>Отчетность поступает в главный офис, благодаря контролю над процессом сокращается
+									время отведенное на постройку проекта.</li>
+								<li>Многократная проверка проекта до задачи его хозяевам.</li>
+								<li>Самые новые системы защиты от пожара, и краж которые устанавливает только наша
+									компания, и несет за них ответственность.</li>
+								<li>Долговременная гарантия качества от нашей компании.</li>
+							</ol>
+						</div>
+					</div>
+					<div class="house-scheme-wrapper">
+						<object data="img/scheme/house-scheme.svg" type="image/svg+xml" id="imap" width="1139"
+							height="670" class="house-scheme"></object>
+					</div>
+				</div>
+				<div id="feedback" class="feedback">
+					<div class="feedback-wrapper">
+						<h2 class="feedback__title">Поэтому наша компания строит дома
+							из высшего качества</h2>
+						<p class="feedback__invite">Оставьте свои данные и мы приедем за вами на машине бизнес класса и
+							обсудим все вопросы, и доставим вас обратно.</p>
+						<form action="#" class="feedback-form">
+							<input class="form__item form__item-name" type="text" name="name" id="name"
+								placeholder="Ваше имя" required>
+							<input class="form__item form__item-phone" type="tel" name="phone" id="phone"
+								placeholder="Ваш телефон" required>
+							<button class="feedback-form__btn btn">Обсудить проект</button>
+						</form>
+					</div>
+				</div>
+		</section>
 	</div>
 
-<!-- font-family: 'Open Sans', sans-serif;
-	font-family: 'Philosopher', sans-serif;
-	font-family: 'Playfair Display', serif;
-	font-family: 'Roboto', sans-serif; 
--->
-<script src="js/jquery.js"></script>
-<script src="js/main.js"></script>
+	<footer class="footer">
+		<div class="footer-info">
+			<img src="img/logo/logo.svg" alt="Wood Project" class="footer-info__logo">
+			<div class="footer-info-copy">
+				<p class="copy__text">Элитные дома ручной работы
+					из редких видов дерева</p>
+				<p class="copy__copyright">&copy; Все права защищены</p>
+			</div>
+		</div>
+		<nav class="menu-footer">
+			<a href="#projects" title="Готовые проекты">Готовые проекты</a>
+			<a href="#team" title="Наши профессионалы">Наша команда</a>
+			<a href="#materials" title="Материалы">Материалы</a>
+			<a href="#order-project" title="Заказть Проект">Заказть Проект</a>
+		</nav>
+		<div class="header-top-feedback footer-feedback">
+			<a href="#" class="header-top__btn">Заказать звонок</a>
+			<a href="#" class="header-top__tel ">+7 964 426 88 88</a>
+		</div>
+		<div class="authors">
+			<a href="https://mykhatilo-vlad.github.io/" class="authors__link">Mykhatilo Vlad - Web Developer</a>
+			<a href="#" class="authors__link">Hura Artur - Web Designer</a>
+		</div>
+	</footer>
+
+	<script src="js/jquery.js"></script>
+	<script src="libs/owlcarousel/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
+
 </html>
