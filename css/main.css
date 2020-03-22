@@ -897,7 +897,7 @@ a {
   .skills__section-title {
     margin-bottom: 20px; }
   .skills__item {
-    margin-bottom: 10px; }
+    margin-bottom: 20px; }
     @media (min-width: 992px) {
       .skills__item {
         margin-bottom: 30px; } }

@@ -69,7 +69,7 @@
 	var clonedMenu = $(mainMenu.clone());
 	
 	$(document).scroll(function () {
-		if ($(document).width() > 785) {
+		if ($(document).width() > 992) {
 			$(clonedMenu).addClass('fixed');
 			$(mainMenu).before(clonedMenu);
 			if ($(document).scrollTop() > $('.main-menu').height() + 10) {
