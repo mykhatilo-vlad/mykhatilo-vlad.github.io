@@ -172,8 +172,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .header-top__logo {
-	background: #100F0F;
+	/* background: #100F0F; */
 	padding: 17px 18px 15px 3px;
+	max-width: 100px;
 }
 
 .header-top-feedback {
